@@ -36,6 +36,10 @@
 .mainDiv button{
     border : none;
     box-shadow: -3px -3px 5px white,3px 3px 5px white;
-    border-radius: 20px;
+    border-radius: 20px;   
+}
+.aboutDiv{
+    box-shadow: -2px -2px 5px rgb(138, 126, 126),4px 4px 5px rgb(138, 126, 126);
+    width: 50%;
     
 }

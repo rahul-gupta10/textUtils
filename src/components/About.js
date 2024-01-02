@@ -6,9 +6,12 @@ function About() {
   //   console.log()
   // });
   return (
-    <div>
-      About
+    <>
+    <div className="container my-5 aboutDiv">
+      Text Utils is a website which provide digital support. By using this service User can manipulate the sentence.
+      There are many functions available like change text into upercase / lowercase, copy modifed text.
     </div>
+    </>
   )
 }
 

@@ -35,37 +35,37 @@ export default function TextForm(props) {
   return (
     <>
       <div className="mb-3 mainDiv">
-        <label className="htmlform-label my-3">
-          Enter you text here
+        <label className="htmlform-label my-1">
+          <strong>Enter you text here</strong>
         </label>
         <br />
         <textarea
-          className="form-control"
+          className="form-control my-2"
           id="myBox"
           rows="8"
           value={text}
           onChange={onchangehandle}
           style={props.mode==="light"?{backgroundColor:"white",color:"black"}:{backgroundColor:"grey",color:"white"}}
         ></textarea>
-        <button className="btn btn-primary my-3" onClick={onCicked} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
+        <button className="btn btn-primary my-2" onClick={onCicked} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
           Convert to Upercase
         </button>
-        <button className="btn btn-primary my-3 mx-2" onClick={onCickedlower} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
+        <button className="btn btn-primary my-2 mx-2" onClick={onCickedlower} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary my-3 mx-2" onClick={copyHandler} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
+        <button className="btn btn-primary my-2 mx-2" onClick={copyHandler} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
           Copy Text
         </button>
-        <button className="btn btn-primary my-3 mx-2" onClick={removeExtraSpaces} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
+        <button className="btn btn-primary my-2 mx-2" onClick={removeExtraSpaces} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
           Remove Extra spaces
         </button>
-        <button className="btn btn-primary my-3 mx-2" onClick={reset} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
+        <button className="btn btn-primary my-2 mx-2" onClick={reset} style={props.mode==="dark"?{backgroundColor:props.darkcolor}:null}>
           Reset
         </button>
         <div>
           {text.length !== 0 ? (
             <p>
-              {text.split(/[ ]+/).length-1} Words and {text.length} Characters
+              {text.split(" ").filter((arrelement)=>{return arrelement.length!==0}).length} Words and {text.length} Characters
             </p>
           ) : (
             <p>Your words count here!!</p>
