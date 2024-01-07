@@ -38,9 +38,9 @@ export default function Navbar(props) {
               </li>
             </ul>
             <div className="colorDiv">
-              <div className="color1" onClick={props.bgColor.color1}></div>
-              <div className="color2" onClick={props.bgColor.color2}></div>
-              <div className="color3" onClick={props.bgColor.color3}></div>
+              <div className="color1" onClick={()=>{props.bgColor('rgb(80, 90, 90)')}}></div>
+              <div className="color2" onClick={()=>{props.bgColor('rgb(63, 9, 77)')}}></div>
+              <div className="color3" onClick={()=>{props.bgColor('rgb(59, 40, 18)')}}></div>
             </div>
               <div className="form-check form-switch">
                 <input id="mode" className="form-check-input" type="checkbox" role="switch" onClick={props.modeButton}/>
@@ -62,3 +62,4 @@ Navbar.propTypes = {
 Navbar.defaultProps ={
     mode : "Error in mode props",
 }
+// rgb(80, 90, 90)

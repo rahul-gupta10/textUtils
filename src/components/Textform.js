@@ -65,7 +65,7 @@ export default function TextForm(props) {
         <div>
           {text.length !== 0 ? (
             <p>
-              {text.split(" ").filter((arrelement)=>{return arrelement.length!==0}).length} Words and {text.length} Characters
+              {text.split(/\s+/).filter((arrelement)=>{return arrelement.length!==0}).length} Words and {text.length} Characters
             </p>
           ) : (
             <p>Your words count here!!</p>
