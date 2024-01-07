@@ -11,12 +11,18 @@
     display: block;
     display: flex;
 }
+.mainDiv button:hover{
+background-color: rgb(97, 89, 89) !important;
+border-radius: 10px;
+transition: all ease-in-out 0.5s;
+}
 .color1{
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: rgb(80, 90, 90);
     margin-right: 20px;
+    cursor: pointer;
 }
 .color2{
     width: 25px;
@@ -24,6 +30,7 @@
     border-radius: 50%;
     background-color: rgb(63, 9, 77);
     margin-right: 20px;
+    cursor: pointer;
 }
 .color3{
     width: 25px;
@@ -31,12 +38,13 @@
     border-radius: 50%;
     background-color: rgb(59, 40, 18);
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .mainDiv button{
     border : none;
     box-shadow: -3px -3px 5px white,3px 3px 5px white;
-    border-radius: 20px;   
+    border-radius: 20px;
 }
 .aboutDiv{
     box-shadow: -2px -2px 5px rgb(138, 126, 126),4px 4px 5px rgb(138, 126, 126);
